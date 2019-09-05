@@ -21,7 +21,7 @@ namespace Ecommerce.DatabaseContext
         {
             optionsBuilder
                 .UseLazyLoadingProxies(false)
-                .UseSqlServer("Server=(local);Database=EcommerceDb4; Integrated Security=true");
+                .UseSqlServer("Server=(local)\\sqlexpress;Database=EcommerceDb4; Integrated Security=true");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
